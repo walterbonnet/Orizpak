@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
                 <Leaf className="h-5 w-5" />
               </div>
               <span className="font-heading text-2xl font-bold tracking-tight text-brand-warm-white">
-                ORIZ<span className="text-brand-olive font-medium">PAK</span>
+                Oriz<span className="text-brand-olive font-medium">Pak</span>
               </span>
             </Link>
             <p className="text-brand-warm-white/70 text-sm font-body leading-relaxed max-w-sm">
@@ -77,11 +77,11 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3 text-brand-warm-white/70 text-sm font-body leading-relaxed">
                 <MapPin className="h-5 w-5 text-brand-olive flex-shrink-0 mt-0.5" />
-                <span>Parque Industrial Enea, Pudahuel, Santiago, Chile</span>
+                <span>Ciudad de Corrientes, Argentina</span>
               </li>
               <li className="flex items-center space-x-3 text-brand-warm-white/70 text-sm font-body">
                 <Phone className="h-5 w-5 text-brand-olive flex-shrink-0" />
-                <span>+56 2 2840 5900</span>
+                <span>+54 379 440 5900</span>
               </li>
               <li className="flex items-center space-x-3 text-brand-warm-white/70 text-sm font-body">
                 <Mail className="h-5 w-5 text-brand-olive flex-shrink-0" />
@@ -108,7 +108,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Rights */}
         <div className="mt-16 pt-8 border-t border-brand-warm-white/10 flex flex-col md:flex-row items-center justify-between text-xs font-body text-brand-warm-white/40 gap-4">
-          <p>&copy; {currentYear} ORIZPAK. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} OrizPak. Todos los derechos reservados.</p>
           <div className="flex space-x-6">
             <Link href="#" className="hover:text-brand-olive transition-colors duration-200">
               Políticas de Privacidad

@@ -50,7 +50,7 @@ export default function Home() {
     ],
     'contactPoint': {
       '@type': 'ContactPoint',
-      'telephone': '+56-2-2840-5900',
+      'telephone': '+54-379-440-5900',
       'contactType': 'sales',
       'email': 'contacto@orizpack.cl',
       'areaServed': 'AR',

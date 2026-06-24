@@ -49,7 +49,7 @@ export default function NosotrosClient() {
             <div
               className="w-full max-w-[360px] aspect-square rounded-3xl p-8 border border-brand-charcoal/10 flex flex-col justify-between"
               style={{
-                background: 'linear-gradient(135deg, #6D7550 0%, #4B5137 100%)',
+                background: 'linear-gradient(135deg, #606c38 0%, #283618 100%)',
               }}
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-warm-white/10 text-brand-warm-white">
@@ -61,7 +61,7 @@ export default function NosotrosClient() {
                 </h3>
                 <div className="h-[2px] w-16 bg-brand-sand" />
                 <p className="font-body text-xs text-brand-warm-white/80">
-                  ORIZPAK S.A. &copy; Santiago, Chile
+                  OrizPak S.A. &copy; Ciudad de Corrientes, Argentina
                 </p>
               </div>
             </div>

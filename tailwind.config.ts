@@ -10,11 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          'warm-white': '#FBF9F6',
-          'sand': '#ECE5D8',
-          'charcoal': '#2A2A2A',
-          'olive': '#6D7550',
-          'earth': '#B67B55',
+          'warm-white': '#fdfaea',
+          'sand': '#f3eedf',
+          'charcoal': '#283618',
+          'olive': '#606c38',
+          'earth': '#f97924',
+          'green-vibrant': '#79a64f',
         },
       },
       fontFamily: {

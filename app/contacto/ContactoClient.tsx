@@ -144,7 +144,7 @@ export default function ContactoClient() {
                       label="Teléfono Móvil / WhatsApp *"
                       type="tel"
                       error={errors.phone?.message}
-                      placeholder="Ej. +56 9 1234 5678"
+                      placeholder="Ej. +54 379 412 3456"
                       {...register('phone')}
                     />
                   </div>
@@ -268,11 +268,11 @@ export default function ContactoClient() {
               <div className="space-y-4 font-body text-sm text-brand-charcoal/80 leading-relaxed">
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-brand-olive flex-shrink-0 mt-0.5" />
-                  <span>Parque Industrial Enea, Pudahuel, Santiago, Chile</span>
+                  <span>Ciudad de Corrientes, Argentina</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-brand-olive flex-shrink-0" />
-                  <span>+56 2 2840 5900</span>
+                  <span>+54 379 440 5900</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-brand-olive flex-shrink-0" />

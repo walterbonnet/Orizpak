@@ -19,13 +19,13 @@ export default function ContactPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    'name': 'Contacto B2B y Ventas Corporativas - ORIZPAK',
+    'name': 'Contacto B2B y Ventas Corporativas - OrizPak',
     'description': 'Formulario para solicitar muestras gratuitas de envases y cotizaciones por volumen.',
     'url': 'https://orizpack.com.ar/contacto',
     'mainEntity': {
       '@type': 'Organization',
-      'name': 'ORIZPAK',
-      'telephone': '+56-2-2840-5900',
+      'name': 'OrizPak',
+      'telephone': '+54-379-440-5900',
       'email': 'contacto@orizpack.cl'
     }
   };

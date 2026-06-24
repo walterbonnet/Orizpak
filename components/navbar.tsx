@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
               <Leaf className="h-5 w-5" />
             </motion.div>
             <span className="font-heading text-2xl font-bold tracking-tight text-brand-charcoal">
-              ORIZ<span className="text-brand-olive font-medium">PAK</span>
+              Oriz<span className="text-brand-olive font-medium">Pak</span>
             </span>
           </Link>
 

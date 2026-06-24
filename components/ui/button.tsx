@@ -31,10 +31,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       'inline-flex items-center justify-center font-heading font-bold rounded-3xl transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-olive focus-visible:ring-offset-2 disabled:opacity-40 disabled:pointer-events-none cursor-pointer';
 
     const variants = {
-      primary: 'bg-brand-charcoal text-brand-warm-white hover:bg-brand-charcoal/90 border border-brand-charcoal',
-      secondary: 'bg-brand-olive text-brand-warm-white hover:bg-brand-olive/90 border border-brand-olive',
-      outline: 'border border-brand-charcoal text-brand-charcoal bg-transparent hover:bg-brand-charcoal hover:text-brand-warm-white',
-      ghost: 'text-brand-charcoal hover:bg-brand-charcoal/5 bg-transparent',
+      primary: 'bg-brand-charcoal text-brand-warm-white hover:bg-brand-green-vibrant hover:border-brand-green-vibrant border border-brand-charcoal',
+      secondary: 'bg-brand-olive text-brand-warm-white hover:bg-brand-green-vibrant hover:border-brand-green-vibrant border border-brand-olive',
+      outline: 'border border-brand-charcoal text-brand-charcoal bg-transparent hover:bg-brand-green-vibrant hover:text-brand-warm-white hover:border-brand-green-vibrant',
+      ghost: 'text-brand-charcoal hover:bg-brand-green-vibrant/10 bg-transparent',
     };
 
     const sizes = {

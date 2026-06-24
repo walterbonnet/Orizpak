@@ -80,7 +80,7 @@ export const ContactoSection: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-brand-olive" />
-                <span>+56 2 2840 5900</span>
+                <span>+54 379 440 5900</span>
               </div>
             </div>
           </div>
