@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="arrozGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE3D2" />
+      <stop offset="100%" stop-color="#C29B78" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F6" />
+      <stop offset="100%" stop-color="#ECE5D8" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="24" />
+
+  <!-- Shadow -->
+  <rect x="80" y="160" width="240" height="150" rx="20" fill="#2A2A2A" fill-opacity="0.08" filter="blur(4px)" />
+
+  <!-- Tray Body (Rectangular clamshell styled) -->
+  <rect x="75" y="145" width="250" height="150" rx="24" fill="url(#arrozGrad)" stroke="#C29B78" stroke-width="1.5" />
+  
+  <!-- Tray Inner Compartment -->
+  <rect x="90" y="160" width="220" height="120" rx="16" fill="#F4EFE6" stroke="#DFD7C7" stroke-width="1" />
+  
+  <!-- Division lines for segments (compartment style) -->
+  <line x1="200" y1="160" x2="200" y2="280" stroke="#DFD7C7" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Textured dots to simulate rice husk fibers -->
+  <circle cx="120" cy="180" r="1.2" fill="#6D7550" opacity="0.35" />
+  <circle cx="270" cy="240" r="1.5" fill="#6D7550" opacity="0.35" />
+  <circle cx="150" cy="220" r="1" fill="#B67B55" opacity="0.4" />
+  <circle cx="230" cy="190" r="1.2" fill="#B67B55" opacity="0.4" />
+</svg>

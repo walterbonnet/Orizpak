@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bagazoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EAE3D2" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECE5D8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="24" />
+  <!-- Grid -->
+  <path d="M 0,50 L 400,50 M 0,100 L 400,100 M 0,150 L 400,150 M 0,200 L 400,200 M 0,250 L 400,250 M 0,300 L 400,300 M 0,350 L 400,350" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+  <path d="M 50,0 L 50,400 M 100,0 L 100,400 M 150,0 L 150,400 M 200,0 L 200,400 M 250,0 L 250,400 M 300,0 L 300,400 M 350,0 L 350,400" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+
+  <!-- Steam effects -->
+  <path d="M 180,110 Q 190,90 180,70" fill="none" stroke="#B67B55" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+  <path d="M 200,105 Q 210,85 200,65" fill="none" stroke="#B67B55" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+  <path d="M 220,110 Q 230,90 220,70" fill="none" stroke="#B67B55" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Bowl Outer Shadow -->
+  <ellipse cx="200" cy="300" rx="110" ry="25" fill="#2A2A2A" fill-opacity="0.1" />
+
+  <!-- Bowl Body -->
+  <path d="M 90,180 Q 90,300 200,300 Q 310,300 310,180 Z" fill="url(#bagazoGrad)" />
+  
+  <!-- Bowl Rim -->
+  <ellipse cx="200" cy="180" rx="110" ry="20" fill="#F8F6F0" stroke="#DFD7C7" stroke-width="2" />
+  <ellipse cx="200" cy="180" rx="98" ry="15" fill="#EAE3D2" fill-opacity="0.5" />
+
+  <!-- Texture/Segments (Industrial Molding lines) -->
+  <path d="M 115,220 Q 150,285 200,298" fill="none" stroke="#2A2A2A" stroke-opacity="0.06" stroke-width="2" />
+  <path d="M 285,220 Q 250,285 200,298" fill="none" stroke="#2A2A2A" stroke-opacity="0.06" stroke-width="2" />
+  <line x1="200" y1="180" x2="200" y2="300" stroke="#2A2A2A" stroke-opacity="0.06" stroke-width="2" />
+
+  <!-- Eco Seal Emblem -->
+  <circle cx="200" cy="240" r="16" fill="#6D7550" fill-opacity="0.9" />
+  <path d="M 195,242 L 199,245 L 206,237" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+</svg>

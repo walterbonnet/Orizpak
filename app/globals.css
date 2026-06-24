@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FBF9F6; /* Warm White */
+  --foreground: #2A2A2A; /* Charcoal */
+  
+  --brand-warm-white: #FBF9F6;
+  --brand-sand: #ECE5D8;
+  --brand-charcoal: #2A2A2A;
+  --brand-olive: #6D7550;
+  --brand-earth: #B67B55;
+}
+
+@theme {
+  --color-brand-warm-white: var(--brand-warm-white);
+  --color-brand-sand: var(--brand-sand);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-olive: var(--brand-olive);
+  --color-brand-earth: var(--brand-earth);
+  
+  --font-heading: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+  
+  --radius-3xl: 24px;
+  --radius-2xl: 16px;
+  --radius-xl: 12px;
+  
+  --shadow-soft: 0 4px 20px -2px rgba(42, 42, 42, 0.04), 0 2px 8px -1px rgba(42, 42, 42, 0.02);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Organic Rice Grain / Paper Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom scrollbar to look premium and sleek */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-warm-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-sand);
+  border-radius: 4px;
+  border: 2px solid var(--brand-warm-white);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-olive);
+}
+
+/* Accessibility Focus Ring (WCAG AA compliant) */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--brand-olive);
+  outline-offset: 4px;
+}
+
+/* Keyframes and utility animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

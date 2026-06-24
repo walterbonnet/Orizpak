@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="plaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#ECE5D8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.7" />
+    </linearGradient>
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B67B55" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6D7550" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECE5D8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="24" />
+  <!-- Grid -->
+  <path d="M 0,50 L 400,50 M 0,100 L 400,100 M 0,150 L 400,150 M 0,200 L 400,200 M 0,250 L 400,250 M 0,300 L 400,300 M 0,350 L 400,350" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+  <path d="M 50,0 L 50,400 M 100,0 L 100,400 M 150,0 L 150,400 M 200,0 L 200,400 M 250,0 L 250,400 M 300,0 L 300,400 M 350,0 L 350,400" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+
+  <!-- Cup Shadow -->
+  <ellipse cx="200" cy="340" rx="60" ry="12" fill="#2A2A2A" fill-opacity="0.08" />
+
+  <!-- Straw (Back segment) -->
+  <line x1="200" y1="130" x2="240" y2="70" stroke="#6D7550" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Glass Inner Liquid -->
+  <path d="M 148,220 L 252,220 L 235,320 L 165,320 Z" fill="url(#liquidGrad)" />
+  <ellipse cx="200" cy="220" rx="52" ry="10" fill="#B67B55" />
+
+  <!-- Glass Outer Body -->
+  <path d="M 140,150 L 260,150 L 240,330 L 160,330 Z" fill="url(#plaGrad)" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.8" />
+  
+  <!-- Glass Rim -->
+  <ellipse cx="200" cy="150" rx="60" ry="12" fill="#FFFFFF" fill-opacity="0.4" stroke="#FFFFFF" stroke-width="3" />
+  <ellipse cx="200" cy="150" rx="55" ry="9" fill="none" stroke="#2A2A2A" stroke-opacity="0.05" stroke-width="1" />
+
+  <!-- Reflections/Highlights -->
+  <path d="M 152,170 L 168,320" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" />
+  <path d="M 248,170 L 234,290" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Compostable Leaf logo printed on glass -->
+  <path d="M 200,240 Q 210,248 200,256 Q 190,248 200,240 Z" fill="#FFFFFF" fill-opacity="0.5" />
+  <path d="M 200,256 L 200,242" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.6" />
+</svg>

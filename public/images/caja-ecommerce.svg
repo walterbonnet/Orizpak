@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kraftBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C29B78" />
+      <stop offset="100%" stop-color="#9C7351" />
+    </linearGradient>
+    <linearGradient id="kraftInside" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFD7C7" />
+      <stop offset="100%" stop-color="#B67B55" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECE5D8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="24" />
+  <!-- Grid -->
+  <path d="M 0,50 L 400,50 M 0,100 L 400,100 M 0,150 L 400,150 M 0,200 L 400,200 M 0,250 L 400,250 M 0,300 L 400,300 M 0,350 L 400,350" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+  <path d="M 50,0 L 50,400 M 100,0 L 100,400 M 150,0 L 150,400 M 200,0 L 200,400 M 250,0 L 250,400 M 300,0 L 300,400 M 350,0 L 350,400" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+
+  <!-- Box Shadow -->
+  <path d="M 100,310 L 200,350 L 300,310 L 200,280 Z" fill="#2A2A2A" fill-opacity="0.12" filter="blur(8px)" />
+
+  <!-- Box Base Left Wall -->
+  <path d="M 100,210 L 200,260 L 200,320 L 100,270 Z" fill="#9C7351" />
+  
+  <!-- Box Base Right Wall -->
+  <path d="M 200,260 L 300,210 L 300,270 L 200,320 Z" fill="#845D3D" />
+
+  <!-- Box Lid (Aperta / Open) -->
+  <!-- Inner Lid facing up/back -->
+  <path d="M 100,210 L 200,160 L 300,210 L 200,260 Z" fill="url(#kraftInside)" stroke="#845D3D" stroke-width="1" />
+
+  <!-- Box Top Flap Open (Facing viewer) -->
+  <path d="M 100,210 L 80,130 L 180,95 L 200,160 Z" fill="url(#kraftBox)" stroke="#6F4D32" stroke-width="1" />
+  <path d="M 200,160 L 220,95 L 320,130 L 300,210 Z" fill="#B28965" stroke="#845D3D" stroke-width="1" />
+
+  <!-- Eco stamp on the left flap -->
+  <path d="M 125,160 A 10,10 0 1,1 145,155" fill="none" stroke="#6D7550" stroke-width="2" />
+  <!-- Arrow recycling loop icon -->
+  <path d="M 130,148 Q 142,148 140,160" fill="none" stroke="#6D7550" stroke-width="2" />
+  
+  <!-- Stamp text -->
+  <text x="200" y="295" font-family="Space Grotesk, sans-serif" font-size="9" font-weight="bold" fill="#ECE5D8" letter-spacing="1" text-anchor="middle" transform="skewY(18)">FSC® ECO</text>
+</svg>

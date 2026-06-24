@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="courierGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5137" />
+      <stop offset="100%" stop-color="#2A2A2A" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECE5D8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="24" />
+  <!-- Grid -->
+  <path d="M 0,50 L 400,50 M 0,100 L 400,100 M 0,150 L 400,150 M 0,200 L 400,200 M 0,250 L 400,250 M 0,300 L 400,300 M 0,350 L 400,350" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+  <path d="M 50,0 L 50,400 M 100,0 L 100,400 M 150,0 L 150,400 M 200,0 L 200,400 M 250,0 L 250,400 M 300,0 L 300,400 M 350,0 L 350,400" stroke="#2A2A2A" stroke-opacity="0.03" stroke-width="1" />
+
+  <!-- Shadow -->
+  <rect x="100" y="130" width="200" height="200" rx="12" fill="#2A2A2A" fill-opacity="0.12" filter="blur(8px)" />
+
+  <!-- Mailer Main Body -->
+  <rect x="95" y="120" width="210" height="200" rx="12" fill="url(#courierGrad)" />
+  
+  <!-- Mailer Flap (Sealed) -->
+  <path d="M 95,120 L 305,120 L 285,150 L 115,150 Z" fill="#6D7550" stroke="#4B5137" stroke-width="1" />
+  
+  <!-- Flap adhesive peel strip line -->
+  <line x1="120" y1="135" x2="280" y2="135" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6,4" stroke-opacity="0.6" />
+
+  <!-- Soft wrinkles/folds (Plastic simulation) -->
+  <path d="M 95,200 C 130,210 140,190 180,200" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3" stroke-linecap="round" />
+  <path d="M 220,280 C 250,290 270,275 305,285" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Leaf & Recycle Loop Print -->
+  <g transform="translate(160, 210) scale(0.8)">
+    <circle cx="50" cy="30" r="28" fill="none" stroke="#ECE5D8" stroke-width="3" stroke-dasharray="16,6" />
+    <path d="M 40,35 C 40,20 60,20 60,20 C 60,20 60,35 40,35 Z" fill="#ECE5D8" />
+    <path d="M 60,20 L 45,35" stroke="#4B5137" stroke-width="2" />
+  </g>
+  
+  <!-- Stamp text -->
+  <text x="200" y="180" font-family="Space Grotesk, sans-serif" font-size="9" font-weight="bold" fill="#ECE5D8" letter-spacing="2" text-anchor="middle">100% COMPOSTABLE</text>
+  <text x="200" y="300" font-family="Space Grotesk, sans-serif" font-size="8" font-weight="semibold" fill="#6D7550" letter-spacing="1" text-anchor="middle">OK COMPOST HOME</text>
+</svg>
