@@ -8,6 +8,7 @@ export const products: Product[] = [
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/vaso-arroz.png',
+    images: ['/images/vaso-arroz.png', '/images/vaso-arroz-sorbete.png'],
     dimensions: '350ml / 500ml',
     moq: 10,
     certifications: [
@@ -52,7 +53,7 @@ export const products: Product[] = [
     description: 'Bandeja rígida para logística alimentaria. Mantiene la neutralidad organoléptica del almidón sin condensación.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
-    image: '/images/bandeja-arroz.svg',
+    image: '/images/bandeja-compartimentada.png',
     dimensions: '24 cm x 18 cm x 2.5–3 cm',
     moq: 1000,
     certifications: [
@@ -118,7 +119,7 @@ export const products: Product[] = [
     description: 'Conducto rígido hidrofóbico de arroz. Mantiene su integridad estructural en líquidos por más de 12 horas.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
-    image: '/images/sorbete-arroz.svg',
+    image: '/images/sorbete-arroz.png',
     dimensions: 'Largo 20 cm / Ø 8 mm',
     moq: 10000,
     certifications: [

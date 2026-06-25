@@ -135,7 +135,7 @@ function CatalogContent() {
               <div
                 key={product.id}
                 onClick={() => setActiveProduct(product)}
-                className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-charcoal/10 bg-brand-warm-white p-6 hover:shadow-soft hover:border-brand-charcoal/30 transition-all duration-200 cursor-pointer"
+                className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-charcoal/10 bg-brand-warm-white p-6 hover:shadow-soft hover:border-brand-charcoal/30 transition-all duration-200 cursor-pointer h-full"
               >
                 <div>
                   <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-brand-sand/20 mb-6 flex items-center justify-center border border-brand-charcoal/5">
@@ -233,6 +233,8 @@ function CatalogContent() {
                         const isHondo = img.includes('hondo');
                         const isPlayo = img.includes('playo');
 
+                        const isSorbete = img.includes('sorbete');
+
                         let groupLabel = 'Producto';
                         let label = `Imagen ${idx + 1}`;
 
@@ -242,6 +244,9 @@ function CatalogContent() {
                         } else if (activeProduct.id === 'plato-orizpack') {
                           groupLabel = 'Plato';
                           label = isHondo ? 'Hondo' : isPlayo ? 'Playo' : `Variante ${idx + 1}`;
+                        } else if (activeProduct.id === 'vaso-orizpack') {
+                          groupLabel = 'Vaso';
+                          label = isSorbete ? 'Con Sorbete' : 'Estándar';
                         }
 
                         return (

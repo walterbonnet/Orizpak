@@ -38,7 +38,7 @@ const ProductCard: React.FC<{ product: Product; index: number }> = ({ product, i
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
-      className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-charcoal/10 bg-brand-warm-white p-6 hover:shadow-soft hover:border-brand-charcoal/30 transition-all duration-200"
+      className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-charcoal/10 bg-brand-warm-white p-6 hover:shadow-soft hover:border-brand-charcoal/30 transition-all duration-200 h-full"
     >
       <div>
         {/* Product Image Frame */}
