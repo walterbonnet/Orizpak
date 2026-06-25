@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { Leaf, Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,10 +11,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand Col */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-warm-white text-brand-charcoal">
-                <Leaf className="h-5 w-5" />
-              </div>
+            <Link href="/">
               <span className="font-heading text-2xl font-bold tracking-tight text-brand-warm-white">
                 Oriz<span className="text-brand-olive font-medium">Pak</span>
               </span>

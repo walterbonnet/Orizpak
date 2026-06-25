@@ -4,7 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Button from './ui/button';
 
 export const Navbar: React.FC = () => {
@@ -25,14 +25,7 @@ export const Navbar: React.FC = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <motion.div
-              whileHover={{ rotate: 10 }}
-              transition={{ duration: 0.2 }}
-              className="flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-charcoal text-brand-warm-white"
-            >
-              <Leaf className="h-5 w-5" />
-            </motion.div>
+          <Link href="/" className="flex items-center group">
             <span className="font-heading text-2xl font-bold tracking-tight text-brand-charcoal">
               Oriz<span className="text-brand-olive font-medium">Pak</span>
             </span>
