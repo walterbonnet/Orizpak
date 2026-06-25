@@ -7,7 +7,7 @@ export const products: Product[] = [
     description: 'Envase térmico rígido de cáscara de arroz. Aislante natural para bebidas calientes y frías sin aditivos químicos.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
-    image: '/images/vaso-arroz.svg',
+    image: '/images/vaso-arroz.png',
     dimensions: '350ml / 500ml',
     moq: 10,
     certifications: [
@@ -29,7 +29,8 @@ export const products: Product[] = [
     description: 'Vajilla de alta densidad mecánica. Rigidez idéntica al plástico inyectado, apto para alimentos calientes y grasas.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
-    image: '/images/plato-arroz.svg',
+    image: '/images/plato-hondo.png',
+    images: ['/images/plato-hondo.png', '/images/plato-playo.png'],
     dimensions: 'Hondo: 18 cm (Capacidad ~600 ml) / Playo: 22 cm',
     moq: 1500,
     certifications: [
@@ -73,7 +74,7 @@ export const products: Product[] = [
     description: 'Contenedor hermético diseñado específicamente para transporte y delivery de comida preparada. Conserva el calor sin ablandar el envase.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
-    image: '/images/contenedor-bagazo.svg',
+    image: '/images/bandeja-delivery.png',
     dimensions: '22 cm x 16 cm x 6 cm',
     moq: 1500,
     certifications: [
@@ -92,10 +93,10 @@ export const products: Product[] = [
   {
     id: 'cubiertos-orizpack',
     name: 'Kit de Cubiertos OrizPack',
-    description: 'Utensilios rígidos de alto rendimiento. Rigidez mecánica superior que no se dobla ante cortes o alimentos densos.',
+    description: 'Utensilios rígidos de alto rendimiento. Utensilios mecánicos superiores que no se doblan ante cortes o alimentos densos.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
-    image: '/images/cubiertos-arroz.svg',
+    image: '/images/cubiertos-arroz.png',
     dimensions: 'Largo 16 cm',
     moq: 5000,
     certifications: [
