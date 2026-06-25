@@ -265,7 +265,7 @@ function CatalogContent() {
                         <span className="font-bold text-brand-charcoal">{activeProduct.dimensions}</span>
                       </div>
                       <div>
-                        <span className="text-brand-charcoal/50 block text-[10px] font-bold uppercase tracking-wider mb-1">Pedido Mínimo (MOQ)</span>
+                        <span className="text-brand-charcoal/50 block text-[10px] font-bold uppercase tracking-wider mb-1">Pedido mínimo</span>
                         <span className="font-bold text-brand-charcoal">{activeProduct.moq} unidades</span>
                       </div>
                     </div>
@@ -288,7 +288,7 @@ function CatalogContent() {
                   <div className="pt-4">
                     <Link href={`/contacto?product=${activeProduct.id}`}>
                       <Button variant="primary" className="w-full">
-                        Cotizar con Marca Corporativa
+                        Cotizar
                       </Button>
                     </Link>
                   </div>

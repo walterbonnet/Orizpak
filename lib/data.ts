@@ -11,9 +11,9 @@ export const products: Product[] = [
     dimensions: '12 oz (350 ml)',
     moq: 2000,
     certifications: [
-      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
-      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
-      'Apto para Microondas y Líquidos Calientes'
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
     ],
     impact: 'Composta en 90-120 días',
     details: [
@@ -33,9 +33,9 @@ export const products: Product[] = [
     dimensions: 'Diámetro 22 cm',
     moq: 1500,
     certifications: [
-      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
-      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
-      'Apto para Microondas y Líquidos Calientes'
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
     ],
     impact: '0% Plástico - Agro-residuo',
     details: [
@@ -55,9 +55,9 @@ export const products: Product[] = [
     dimensions: '20 x 14 x 5 cm',
     moq: 1000,
     certifications: [
-      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
-      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
-      'Apto para Microondas y Líquidos Calientes'
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
     ],
     impact: '-85% Emisiones CO₂ eq',
     details: [
@@ -77,9 +77,9 @@ export const products: Product[] = [
     dimensions: 'Largo 16 cm',
     moq: 5000,
     certifications: [
-      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
-      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
-      'Apto para Microondas y Líquidos Calientes'
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
     ],
     impact: 'Reutilizable y Compostable',
     details: [
@@ -99,9 +99,9 @@ export const products: Product[] = [
     dimensions: 'Largo 20 cm / Ø 8 mm',
     moq: 10000,
     certifications: [
-      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
-      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
-      'Apto para Microondas y Líquidos Calientes'
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
     ],
     impact: 'No se ablanda - 100% Bio',
     details: [

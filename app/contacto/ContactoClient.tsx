@@ -296,22 +296,22 @@ export default function ContactoClient() {
                 <div className="flex items-start space-x-2">
                   <CheckCircle2 className="h-4 w-4 text-brand-olive flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="block text-brand-warm-white">Apto para Contacto Alimentario</span>
-                    <span className="text-[10px] text-brand-warm-white/60 font-normal">Norma UNE-EN 1186</span>
+                    <span className="block text-brand-warm-white">Biocompostable Certificado</span>
+                    <span className="text-[10px] text-brand-warm-white/60 font-normal">Norma ISO 17088 / INTI</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-2">
                   <CheckCircle2 className="h-4 w-4 text-brand-olive flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="block text-brand-warm-white">100% Biocompostable (Compostable Comercial)</span>
-                    <span className="text-[10px] text-brand-warm-white/60 font-normal block">Norma ISO 17088</span>
-                    <span className="text-[10px] text-brand-olive font-bold block mt-1">Ciclo de degradación: 90–120 días → retorno al suelo</span>
+                    <span className="block text-brand-warm-white">0% Polímeros Petroquímicos</span>
+                    <span className="text-[10px] text-brand-warm-white/60 font-normal">Libre de BPA</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-2">
                   <CheckCircle2 className="h-4 w-4 text-brand-olive flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="block text-brand-warm-white">Apto para Microondas y Líquidos Calientes</span>
+                    <span className="block text-brand-warm-white">Apto Contacto Alimentario</span>
+                    <span className="text-[10px] text-brand-warm-white/60 font-normal">Norma UNE-EN 1186 / INTI</span>
                   </div>
                 </div>
               </div>
