@@ -2,13 +2,13 @@ import { Product, Metric, ProcessStep, FAQItem } from '../types';
 
 export const products: Product[] = [
   {
-    id: 'vaso-arroz-350',
-    name: 'Vaso de Cáscara de Arroz 350ml',
+    id: 'vaso-orizpack',
+    name: 'Vaso OrizPack',
     description: 'Envase térmico rígido de cáscara de arroz. Aislante natural para bebidas calientes y frías sin aditivos químicos.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/vaso-arroz.svg',
-    dimensions: '12 oz (350 ml)',
+    dimensions: '350ml / 500ml',
     moq: 2000,
     certifications: [
       'Biocompostable Certificado (Norma ISO 17088 / INTI)',
@@ -24,13 +24,13 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'plato-arroz-22',
-    name: 'Plato Hondo y Llano de Arroz',
+    id: 'plato-orizpack',
+    name: 'Plato OrizPack Hondo y Playo',
     description: 'Vajilla de alta densidad mecánica. Rigidez idéntica al plástico inyectado, apto para alimentos calientes y grasas.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/plato-arroz.svg',
-    dimensions: 'Diámetro 22 cm',
+    dimensions: 'Hondo: 18 cm (Capacidad ~600 ml) / Playo: 22 cm',
     moq: 1500,
     certifications: [
       'Biocompostable Certificado (Norma ISO 17088 / INTI)',
@@ -46,13 +46,13 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'bandeja-arroz-m',
-    name: 'Bandeja Gastronómica de Arroz',
+    id: 'bandeja-compartimentada',
+    name: 'Bandeja Compartimentada OrizPack',
     description: 'Bandeja rígida para logística alimentaria. Mantiene la neutralidad organoléptica del almidón sin condensación.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
     image: '/images/bandeja-arroz.svg',
-    dimensions: '20 x 14 x 5 cm',
+    dimensions: '24 cm x 18 cm x 2.5–3 cm',
     moq: 1000,
     certifications: [
       'Biocompostable Certificado (Norma ISO 17088 / INTI)',
@@ -68,8 +68,30 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'cubiertos-arroz-kit',
-    name: 'Kit de Cubiertos de Arroz',
+    id: 'bandeja-orizdelivery',
+    name: 'Bandeja OrizDelivery',
+    description: 'Contenedor hermético diseñado específicamente para transporte y delivery de comida preparada. Conserva el calor sin ablandar el envase.',
+    category: 'ECO-PACKAGING',
+    material: 'Biocompuesto de Arroz',
+    image: '/images/contenedor-bagazo.svg',
+    dimensions: '22 cm x 16 cm x 6 cm',
+    moq: 1500,
+    certifications: [
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
+    ],
+    impact: 'Estanqueidad térmica 100%',
+    details: [
+      'Cierre seguro de alta resistencia para transporte.',
+      'Paredes térmicas que conservan la temperatura del alimento.',
+      'Totalmente compostable en origen agrícola.',
+      'Apta para microondas y líquidos calientes.'
+    ]
+  },
+  {
+    id: 'cubiertos-orizpack',
+    name: 'Kit de Cubiertos OrizPack',
     description: 'Utensilios rígidos de alto rendimiento. Rigidez mecánica superior que no se dobla ante cortes o alimentos densos.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
@@ -90,8 +112,8 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'sorbete-arroz-8',
-    name: 'Sorbete Compostable de Arroz',
+    id: 'sorbetes-orizpack',
+    name: 'Sorbetes OrizPack',
     description: 'Conducto rígido hidrofóbico de arroz. Mantiene su integridad estructural en líquidos por más de 12 horas.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
@@ -109,6 +131,28 @@ export const products: Product[] = [
       'Estabilidad garantizada en bebidas ácidas y alcohólicas.',
       'Biodegradación en compostera doméstica en 90 días.',
       'Diámetro calibrado para emulsiones y licuados densos.'
+    ]
+  },
+  {
+    id: 'tapas-orizpack',
+    name: 'Tapas OrizPack',
+    description: 'Tapas ecológicas a presión compatibles con vasos OrizPack de 350ml y 500ml. Sellado hermético para líquidos calientes.',
+    category: 'ECO-PACKAGING',
+    material: 'Biocompuesto de Arroz',
+    image: '/images/vaso-pla.svg',
+    dimensions: 'Compatibles 350ml y 500ml',
+    moq: 2000,
+    certifications: [
+      'Biocompostable Certificado (Norma ISO 17088 / INTI)',
+      '0% Polímeros Petroquímicos (Libre de BPA)',
+      'Apto Contacto Alimentario (Norma UNE-EN 1186 / INTI)'
+    ],
+    impact: 'Cero derrames B2B',
+    details: [
+      'Calce hermético a presión para evitar fugas.',
+      'Apto para bebidas calientes hasta 100°C.',
+      'Material vegetal libre de aditivos petroquímicos.',
+      'Diseño apilable para servicio ágil.'
     ]
   }
 ];
