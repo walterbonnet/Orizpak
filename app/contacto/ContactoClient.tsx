@@ -290,20 +290,29 @@ export default function ContactoClient() {
                 Compromiso Certificado
               </h3>
               <p className="font-body text-xs text-brand-warm-white/70 leading-relaxed">
-                Todas nuestras muestras de papel kraft y bagazo de caña se entregan acompañadas de copias de sus respectivas certificaciones internacionales de compostabilidad y cadena de custodia forestal:
+                Nuestras soluciones cuentan con las máximas certificaciones internacionales de aptitud alimentaria, biodegradabilidad y rendimiento térmico:
               </p>
-              <div className="space-y-2 text-xs font-heading font-semibold text-brand-warm-white/90">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle2 className="h-4 w-4 text-brand-olive" />
-                  <span>TÜV Austria OK Compost (HOME & INDUSTRIAL)</span>
+              <div className="space-y-3 text-xs font-heading font-semibold text-brand-warm-white/90">
+                <div className="flex items-start space-x-2">
+                  <CheckCircle2 className="h-4 w-4 text-brand-olive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="block text-brand-warm-white">Apto para Contacto Alimentario</span>
+                    <span className="text-[10px] text-brand-warm-white/60 font-normal">Norma UNE-EN 1186</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle2 className="h-4 w-4 text-brand-olive" />
-                  <span>FSC® Recycled / 100% (Manejo Responsable)</span>
+                <div className="flex items-start space-x-2">
+                  <CheckCircle2 className="h-4 w-4 text-brand-olive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="block text-brand-warm-white">100% Biocompostable (Compostable Comercial)</span>
+                    <span className="text-[10px] text-brand-warm-white/60 font-normal block">Norma ISO 17088</span>
+                    <span className="text-[10px] text-brand-olive font-bold block mt-1">Ciclo de degradación: 90–120 días → retorno al suelo</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle2 className="h-4 w-4 text-brand-olive" />
-                  <span>PEFC (Custodia Sostenible)</span>
+                <div className="flex items-start space-x-2">
+                  <CheckCircle2 className="h-4 w-4 text-brand-olive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="block text-brand-warm-white">Apto para Microondas y Líquidos Calientes</span>
+                  </div>
                 </div>
               </div>
             </div>

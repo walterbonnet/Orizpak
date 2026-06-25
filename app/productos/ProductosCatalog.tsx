@@ -11,7 +11,7 @@ import { Product } from '@/types';
 import Badge from '@/components/ui/badge';
 import Button from '@/components/ui/button';
 
-const categories = ['Todos', 'Vasos', 'Platos', 'Bandejas', 'Cubiertos', 'Sorbetes'] as const;
+const categories = ['Todos', 'ECO-PACKAGING'] as const;
 const materials = [
   'Todos',
   'Cáscara de Arroz',
@@ -159,9 +159,6 @@ function CatalogContent() {
                       height={400}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                     />
-                    <div className="absolute top-3 left-3">
-                      <Badge variant="charcoal">{product.material}</Badge>
-                    </div>
                   </div>
 
                   <div className="space-y-2 text-left">
@@ -177,10 +174,7 @@ function CatalogContent() {
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-brand-charcoal/10 flex items-center justify-between">
-                  <span className="font-body text-xs text-brand-charcoal/70">
-                    MOQ: {product.moq} uds
-                  </span>
+                <div className="pt-6 mt-6 border-t border-brand-charcoal/10 flex items-center justify-end">
                   <span className="inline-flex items-center text-sm font-heading font-bold text-brand-charcoal group-hover:text-brand-olive transition-colors duration-200">
                     Ver Ficha Técnica
                     <ArrowRight className="ml-1 h-4 w-4 transform transition-transform duration-200 group-hover:translate-x-1" />
@@ -234,9 +228,6 @@ function CatalogContent() {
                       height={500}
                       className="h-full w-full object-cover"
                     />
-                    <div className="absolute top-4 left-4">
-                      <Badge variant="charcoal">{activeProduct.material}</Badge>
-                    </div>
                   </div>
 
                   {/* Certifications Block */}

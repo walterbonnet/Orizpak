@@ -92,15 +92,22 @@ export const Footer: React.FC = () => {
 
           {/* Certifications Col */}
           <div>
-            <h3 className="font-heading text-xs font-bold uppercase tracking-wider text-brand-warm-white mb-6">Certificaciones Reales</h3>
+            <h3 className="font-heading text-xs font-bold uppercase tracking-wider text-brand-warm-white mb-6">Certificaciones y Sellos</h3>
             <div className="space-y-4 text-xs font-body text-brand-warm-white/60">
               <div className="border border-brand-warm-white/10 rounded-2xl p-4 bg-brand-warm-white/5">
-                <span className="font-heading font-bold text-brand-warm-white block mb-1">FSC® Recycled / 100%</span>
-                Papeles y cartones provenientes de fuentes forestales controladas y manejadas de forma sustentable.
+                <span className="font-heading font-bold text-brand-warm-white block mb-1">Apto para Contacto Alimentario</span>
+                Norma UNE-EN 1186
               </div>
               <div className="border border-brand-warm-white/10 rounded-2xl p-4 bg-brand-warm-white/5">
-                <span className="font-heading font-bold text-brand-warm-white block mb-1">OK Compost HOME / INDUSTRIAL</span>
-                Certificación TÜV Austria que asegura biodegradabilidad completa sin residuos de microplásticos.
+                <span className="font-heading font-bold text-brand-warm-white block mb-1">100% Biocompostable</span>
+                Compostable Comercial - Norma ISO 17088
+                <div className="mt-2 pt-2 border-t border-brand-warm-white/10 text-[10px] text-brand-olive font-semibold flex items-center gap-1.5">
+                  <span>Ciclo de degradación: 90–120 días → retorno al suelo</span>
+                </div>
+              </div>
+              <div className="border border-brand-warm-white/10 rounded-2xl p-4 bg-brand-warm-white/5">
+                <span className="font-heading font-bold text-brand-warm-white block mb-1">Apto para Microondas y Líquidos Calientes</span>
+                Rendimiento térmico certificado hasta 100°C.
               </div>
             </div>
           </div>

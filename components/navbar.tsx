@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
           <div className="hidden md:block">
             <Link href="/contacto">
               <Button variant="outline" size="sm">
-                Cotizar Proyecto
+                Contacto
               </Button>
             </Link>
           </div>
@@ -118,7 +118,7 @@ export const Navbar: React.FC = () => {
               <div className="pt-4 px-4">
                 <Link href="/contacto" onClick={() => setIsOpen(false)}>
                   <Button variant="outline" size="md" className="w-full">
-                    Cotizar Proyecto
+                    Contacto
                   </Button>
                 </Link>
               </div>

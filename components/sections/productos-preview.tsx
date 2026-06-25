@@ -48,9 +48,6 @@ export const ProductosPreview: React.FC = () => {
                     height={400}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                   />
-                  <div className="absolute top-3 left-3">
-                    <Badge variant="charcoal">{product.material}</Badge>
-                  </div>
                   <div className="absolute bottom-3 right-3">
                     <Badge variant="sand">{product.impact}</Badge>
                   </div>
@@ -61,9 +58,6 @@ export const ProductosPreview: React.FC = () => {
                   <div className="flex items-center justify-between">
                     <span className="font-heading text-[10px] font-bold text-brand-charcoal/50 uppercase tracking-widest">
                       {product.category}
-                    </span>
-                    <span className="font-body text-xs text-brand-charcoal/70">
-                      MOQ: {product.moq} uds
                     </span>
                   </div>
                   <h3 className="font-heading text-xl font-bold text-brand-charcoal group-hover:text-brand-olive transition-colors duration-200">

@@ -5,12 +5,16 @@ export const products: Product[] = [
     id: 'vaso-arroz-350',
     name: 'Vaso de Cáscara de Arroz 350ml',
     description: 'Envase térmico rígido de cáscara de arroz. Aislante natural para bebidas calientes y frías sin aditivos químicos.',
-    category: 'Vasos',
+    category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/vaso-arroz.svg',
     dimensions: '12 oz (350 ml)',
     moq: 2000,
-    certifications: ['OK Compost HOME (TÜV Austria)', 'Sin BPA (Aprobación FDA)', 'Aprobado SENASA Alimentaria'],
+    certifications: [
+      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
+      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
+      'Apto para Microondas y Líquidos Calientes'
+    ],
     impact: 'Composta en 90-120 días',
     details: [
       'Estabilidad térmica garantizada hasta 100°C sin deformación.',
@@ -23,12 +27,16 @@ export const products: Product[] = [
     id: 'plato-arroz-22',
     name: 'Plato Hondo y Llano de Arroz',
     description: 'Vajilla de alta densidad mecánica. Rigidez idéntica al plástico inyectado, apto para alimentos calientes y grasas.',
-    category: 'Platos',
+    category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/plato-arroz.svg',
     dimensions: 'Diámetro 22 cm',
     moq: 1500,
-    certifications: ['OK Compost (TÜV Austria)', 'Certificación Corrientes Sostenible', 'FDA Food Contact'],
+    certifications: [
+      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
+      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
+      'Apto para Microondas y Líquidos Calientes'
+    ],
     impact: '0% Plástico - Agro-residuo',
     details: [
       'Resistencia a microondas y congelación (-20°C a 120°C).',
@@ -41,12 +49,16 @@ export const products: Product[] = [
     id: 'bandeja-arroz-m',
     name: 'Bandeja Gastronómica de Arroz',
     description: 'Bandeja rígida para logística alimentaria. Mantiene la neutralidad organoléptica del almidón sin condensación.',
-    category: 'Bandejas',
+    category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
     image: '/images/bandeja-arroz.svg',
     dimensions: '20 x 14 x 5 cm',
     moq: 1000,
-    certifications: ['OK Compost INDUSTRIAL', 'EN 13432 (Europa)', 'SENASA Alimentaria'],
+    certifications: [
+      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
+      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
+      'Apto para Microondas y Líquidos Calientes'
+    ],
     impact: '-85% Emisiones CO₂ eq',
     details: [
       'Barrera hidrofóbica natural contra la pérdida de vapor.',
@@ -59,12 +71,16 @@ export const products: Product[] = [
     id: 'cubiertos-arroz-kit',
     name: 'Kit de Cubiertos de Arroz',
     description: 'Utensilios rígidos de alto rendimiento. Rigidez mecánica superior que no se dobla ante cortes o alimentos densos.',
-    category: 'Cubiertos',
+    category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
     image: '/images/cubiertos-arroz.svg',
     dimensions: 'Largo 16 cm',
     moq: 5000,
-    certifications: ['OK Compost HOME', 'FDA Aprobado', 'BPI Certified'],
+    certifications: [
+      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
+      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
+      'Apto para Microondas y Líquidos Calientes'
+    ],
     impact: 'Reutilizable y Compostable',
     details: [
       'Resistencia al corte y tracción física certificada.',
@@ -77,12 +93,16 @@ export const products: Product[] = [
     id: 'sorbete-arroz-8',
     name: 'Sorbete Compostable de Arroz',
     description: 'Conducto rígido hidrofóbico de arroz. Mantiene su integridad estructural en líquidos por más de 12 horas.',
-    category: 'Sorbetes',
+    category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/sorbete-arroz.svg',
     dimensions: 'Largo 20 cm / Ø 8 mm',
     moq: 10000,
-    certifications: ['OK Compost HOME', 'Biodegradable en Agua', 'AS 4736 (Compostabilidad)'],
+    certifications: [
+      'Apto para Contacto Alimentario (Norma UNE-EN 1186)',
+      '100% Biocompostable - Compostable Comercial (Norma ISO 17088)',
+      'Apto para Microondas y Líquidos Calientes'
+    ],
     impact: 'No se ablanda - 100% Bio',
     details: [
       'Cero absorción de agua: no se ablanda ni altera sabores.',
@@ -158,7 +178,7 @@ export const processSteps: ProcessStep[] = [
   {
     step: 6,
     title: 'Compostaje Rápido',
-    description: 'Retorno a la tierra en composteras domésticas. Desintegración molecular biológica en 90-120 días.',
+    description: 'Ciclo de degradación: 90–120 días → retorno al suelo.',
     icon: 'Recycle'
   }
 ];

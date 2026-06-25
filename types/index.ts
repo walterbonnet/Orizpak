@@ -2,7 +2,7 @@ export interface Product {
   id: string;
   name: string;
   description: string;
-  category: 'Vasos' | 'Platos' | 'Bandejas' | 'Cubiertos' | 'Sorbetes';
+  category: 'ECO-PACKAGING' | 'Vasos' | 'Platos' | 'Bandejas' | 'Cubiertos' | 'Sorbetes';
   material: 'Biocompuesto de Arroz' | 'Cáscara de Arroz';
   image: string;
   dimensions: string;
