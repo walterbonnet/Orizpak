@@ -29,6 +29,15 @@ function CatalogContent() {
   const [activeProduct, setActiveProduct] = React.useState<Product | null>(
     initialProductId ? products.find((p) => p.id === initialProductId) || null : null
   );
+  const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    if (activeProduct) {
+      setSelectedImage(activeProduct.image);
+    } else {
+      setSelectedImage(null);
+    }
+  }, [activeProduct]);
 
   if (initialProductId !== prevProductId) {
     setPrevProductId(initialProductId);
@@ -203,16 +212,58 @@ function CatalogContent() {
                 <div className="lg:w-1/2 flex flex-col justify-between">
                   <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-brand-sand/20 flex items-center justify-center border border-brand-charcoal/5 mb-6">
                     <Image
-                      src={activeProduct.image}
+                      src={selectedImage || activeProduct.image}
                       alt={activeProduct.name}
                       width={500}
                       height={500}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover animate-fade-in"
                     />
                     <div className="absolute top-4 left-4">
                       <Badge variant="charcoal">ECO-PACKAGING</Badge>
                     </div>
                   </div>
+
+                  {/* Thumbnail Selector */}
+                  {activeProduct.images && activeProduct.images.length > 1 && (
+                    <div className="flex gap-4 mb-6">
+                      {activeProduct.images.map((img, idx) => {
+                        const isSelected = selectedImage === img;
+                        const isHot = img.includes('caliente');
+                        const isCold = img.includes('fria');
+                        const label = isHot ? 'Caliente' : isCold ? 'Fría' : `Imagen ${idx + 1}`;
+
+                        return (
+                          <button
+                            key={img}
+                            onClick={() => setSelectedImage(img)}
+                            className={`flex-1 flex items-center gap-3 p-3 rounded-2xl border text-left transition-all duration-200 cursor-pointer ${
+                              isSelected
+                                ? 'border-brand-charcoal bg-brand-sand/20 shadow-sm'
+                                : 'border-brand-charcoal/10 bg-transparent hover:border-brand-charcoal/30'
+                            }`}
+                          >
+                            <div className="relative aspect-square w-12 h-12 overflow-hidden rounded-lg bg-brand-sand/10 border border-brand-charcoal/5 flex-shrink-0">
+                              <Image
+                                src={img}
+                                alt={`${activeProduct.name} - ${label}`}
+                                width={48}
+                                height={48}
+                                className="object-cover h-full w-full"
+                              />
+                            </div>
+                            <div>
+                              <span className="font-heading text-[10px] font-bold uppercase tracking-wider text-brand-charcoal/50 block">
+                                Tapa
+                              </span>
+                              <span className="font-heading text-xs font-bold text-brand-charcoal">
+                                {label}
+                              </span>
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
 
                   {/* Certifications Block */}
                   <div className="space-y-3 bg-brand-sand/30 p-6 rounded-3xl border border-brand-charcoal/10">

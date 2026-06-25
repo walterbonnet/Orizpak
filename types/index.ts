@@ -5,6 +5,7 @@ export interface Product {
   category: 'ECO-PACKAGING' | 'Vasos' | 'Platos' | 'Bandejas' | 'Cubiertos' | 'Sorbetes';
   material: 'Biocompuesto de Arroz' | 'Cáscara de Arroz';
   image: string;
+  images?: string[];
   dimensions: string;
   moq: number; // Minimum Order Quantity
   certifications: string[];

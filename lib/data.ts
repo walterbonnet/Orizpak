@@ -136,10 +136,11 @@ export const products: Product[] = [
   {
     id: 'tapas-orizpack',
     name: 'Tapas OrizPack',
-    description: 'Tapas ecológicas a presión compatibles con vasos OrizPack de 350ml y 500ml. Sellado hermético para líquidos calientes.',
+    description: 'Tapas ecológicas a presión compatibles con vasos OrizPack de 350ml y 500ml. Disponibles en variantes para bebidas calientes (con pico) y bebidas frías (con cruz para sorbete).',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
-    image: '/images/vaso-pla.svg',
+    image: '/images/tapa-caliente.png',
+    images: ['/images/tapa-caliente.png', '/images/tapa-fria.png'],
     dimensions: 'Compatibles 350ml y 500ml',
     moq: 2000,
     certifications: [
@@ -150,7 +151,8 @@ export const products: Product[] = [
     impact: 'Cero derrames B2B',
     details: [
       'Calce hermético a presión para evitar fugas.',
-      'Apto para bebidas calientes hasta 100°C.',
+      'Variante Caliente: Apto para bebidas calientes hasta 100°C (con pico de vertido).',
+      'Variante Fría: Diseño con ranura en cruz especial para sorbetes ecológicos.',
       'Material vegetal libre de aditivos petroquímicos.',
       'Diseño apilable para servicio ágil.'
     ]
