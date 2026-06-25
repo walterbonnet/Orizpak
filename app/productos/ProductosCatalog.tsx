@@ -230,7 +230,19 @@ function CatalogContent() {
                         const isSelected = selectedImage === img;
                         const isHot = img.includes('caliente');
                         const isCold = img.includes('fria');
-                        const label = isHot ? 'Caliente' : isCold ? 'Fría' : `Imagen ${idx + 1}`;
+                        const isHondo = img.includes('hondo');
+                        const isPlayo = img.includes('playo');
+
+                        let groupLabel = 'Producto';
+                        let label = `Imagen ${idx + 1}`;
+
+                        if (activeProduct.id === 'tapas-orizpack') {
+                          groupLabel = 'Tapa';
+                          label = isHot ? 'Caliente' : isCold ? 'Fría' : `Variante ${idx + 1}`;
+                        } else if (activeProduct.id === 'plato-orizpack') {
+                          groupLabel = 'Plato';
+                          label = isHondo ? 'Hondo' : isPlayo ? 'Playo' : `Variante ${idx + 1}`;
+                        }
 
                         return (
                           <button
@@ -253,7 +265,7 @@ function CatalogContent() {
                             </div>
                             <div>
                               <span className="font-heading text-[10px] font-bold uppercase tracking-wider text-brand-charcoal/50 block">
-                                Tapa
+                                {groupLabel}
                               </span>
                               <span className="font-heading text-xs font-bold text-brand-charcoal">
                                 {label}
