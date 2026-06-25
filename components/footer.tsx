@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
           {/* Brand Col */}
           <div className="space-y-6">
             <Link href="/">
-              <span className="font-heading text-2xl font-normal tracking-tight text-brand-warm-white">
+              <span className="font-logo text-2xl font-normal tracking-tight text-brand-warm-white">
                 Oriz<span className="font-bold">Pak</span>
               </span>
             </Link>

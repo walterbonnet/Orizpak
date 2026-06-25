@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         heading: ['var(--font-space-grotesk)', 'sans-serif'],
         body: ['var(--font-inter)', 'sans-serif'],
+        logo: ['var(--font-garet)', 'sans-serif'],
       },
       borderRadius: {
         '3xl': '24px',

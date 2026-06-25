@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <span className="font-heading text-2xl font-normal tracking-tight text-brand-charcoal">
+            <span className="font-logo text-2xl font-normal tracking-tight text-brand-charcoal">
               Oriz<span className="font-bold">Pak</span>
             </span>
           </Link>

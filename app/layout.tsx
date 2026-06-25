@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Space_Grotesk, Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
@@ -17,6 +18,22 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
+});
+
+const garet = localFont({
+  src: [
+    {
+      path: '../public/fonts/Garet-Book.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Garet-Heavy.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-garet',
 });
 
 export const metadata: Metadata = {
@@ -60,7 +77,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
+      className={`${spaceGrotesk.variable} ${inter.variable} ${garet.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-brand-sand text-brand-charcoal selection:bg-brand-olive selection:text-brand-white">
         <GoogleAnalytics />
