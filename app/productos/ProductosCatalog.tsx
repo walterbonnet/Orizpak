@@ -67,7 +67,7 @@ function CatalogContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Search Input */}
-            <div className="lg:col-span-4 relative">
+            <div className="lg:col-span-6 relative">
               <Search className="absolute left-4 top-3.5 h-4.5 w-4.5 text-brand-charcoal/40" />
               <input
                 type="text"
@@ -79,7 +79,7 @@ function CatalogContent() {
             </div>
 
             {/* Category Filter */}
-            <div className="lg:col-span-4 flex flex-col items-start space-y-3">
+            <div className="lg:col-span-6 flex flex-col items-start space-y-3">
               <span className="font-heading text-[10px] font-bold uppercase tracking-wider text-brand-charcoal/60">
                 Categoría
               </span>
@@ -95,28 +95,6 @@ function CatalogContent() {
                     }`}
                   >
                     {cat}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Material Filter */}
-            <div className="lg:col-span-4 flex flex-col items-start space-y-3">
-              <span className="font-heading text-[10px] font-bold uppercase tracking-wider text-brand-charcoal/60">
-                Material
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {materials.map((mat) => (
-                  <button
-                    key={mat}
-                    onClick={() => setSelectedMaterial(mat)}
-                    className={`rounded-3xl px-4 py-2 font-heading text-xs font-bold transition-all duration-200 cursor-pointer ${
-                      selectedMaterial === mat
-                        ? 'bg-brand-olive text-brand-warm-white'
-                        : 'bg-brand-sand/30 text-brand-charcoal hover:bg-brand-charcoal/5'
-                    }`}
-                  >
-                    {mat}
                   </button>
                 ))}
               </div>
@@ -159,6 +137,9 @@ function CatalogContent() {
                       height={400}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                     />
+                    <div className="absolute top-3 left-3">
+                      <Badge variant="charcoal">ECO-PACKAGING</Badge>
+                    </div>
                   </div>
 
                   <div className="space-y-2 text-left">
@@ -228,6 +209,9 @@ function CatalogContent() {
                       height={500}
                       className="h-full w-full object-cover"
                     />
+                    <div className="absolute top-4 left-4">
+                      <Badge variant="charcoal">ECO-PACKAGING</Badge>
+                    </div>
                   </div>
 
                   {/* Certifications Block */}
@@ -266,7 +250,9 @@ function CatalogContent() {
                       </div>
                       <div>
                         <span className="text-brand-charcoal/50 block text-[10px] font-bold uppercase tracking-wider mb-1">Pedido mínimo</span>
-                        <span className="font-bold text-brand-charcoal">{activeProduct.moq} unidades</span>
+                        <span className="font-bold text-brand-charcoal">
+                          {activeProduct.moq} unidades {activeProduct.id === 'vaso-orizpack' ? '(1 pack)' : ''}
+                        </span>
                       </div>
                     </div>
 

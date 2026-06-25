@@ -60,7 +60,7 @@ const CountUp: React.FC<CountUpProps> = ({ value }) => {
     return () => observer.disconnect();
   }, [targetNumber, hasAnimated]);
 
-  const formattedCount = targetNumber % 1 === 0 ? Math.floor(count) : count.toFixed(1);
+  const formattedCount = targetNumber % 1 === 0 ? Math.floor(count).toLocaleString('es-AR') : count.toFixed(1);
 
   return (
     <div ref={elementRef} className="font-heading text-4xl sm:text-5xl font-extrabold text-brand-warm-white tracking-tight mb-2">
@@ -98,7 +98,7 @@ export const Impacto: React.FC = () => {
           </div>
           <div className="lg:col-span-6">
             <p className="font-body text-base sm:text-lg text-brand-warm-white/70 text-left leading-relaxed">
-              El packaging ecológico no es solo una declaración de intenciones. Proveemos a nuestros clientes B2B con reportes precisos de ahorro ambiental que pueden incorporar en sus balances de ESG.
+              El packaging ecológico no es solo una declaración de intenciones. Proveemos a nuestros clientes B2B en Corrientes y Chaco con argumentos de diseño y datos precisos de sustitución ambiental que pueden incorporar directamente en sus reportes de triple impacto y balances de ESG.
             </p>
           </div>
         </div>

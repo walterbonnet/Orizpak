@@ -3,13 +3,13 @@ import { Product, Metric, ProcessStep, FAQItem } from '../types';
 export const products: Product[] = [
   {
     id: 'vaso-orizpack',
-    name: 'Vaso OrizPack',
+    name: 'Vaso OrizPack de 350ml/500ml',
     description: 'Envase térmico rígido de cáscara de arroz. Aislante natural para bebidas calientes y frías sin aditivos químicos.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
     image: '/images/vaso-arroz.svg',
     dimensions: '350ml / 500ml',
-    moq: 2000,
+    moq: 10,
     certifications: [
       'Biocompostable Certificado (Norma ISO 17088 / INTI)',
       '0% Polímeros Petroquímicos (Libre de BPA)',
@@ -20,7 +20,7 @@ export const products: Product[] = [
       'Estabilidad térmica garantizada hasta 100°C sin deformación.',
       'Aislamiento natural que reduce la transferencia de calor.',
       'Estructura libre de polímeros petroquímicos.',
-      'Apto para lavavajillas y reutilización certificada.'
+      'Resistencia a la humedad prolongada: Diseñado para mantener su rigidez estructural durante todo el ciclo de uso gastronómico sin ablandarse.'
     ]
   },
   {
@@ -160,30 +160,30 @@ export const products: Product[] = [
 export const metrics: Metric[] = [
   {
     id: 'co2-avoided',
-    value: '620 Ton',
-    label: 'CO₂ Evitado al Año',
-    description: 'Reducción de huella de carbono certificada por sustitución de polímeros fósiles.',
+    value: '320000 Ton',
+    label: 'RESIDUO DISPONIBLE EN LA REGIÓN',
+    description: 'Mitigación de afecciones respiratorias en familias rurales mediante la valorización y rescate de la cáscara de arroz que hoy se quema a cielo abierto en los molinos del NEA.',
     icon: 'Leaf'
   },
   {
     id: 'plastic-replaced',
-    value: '18.4 Millones',
-    label: 'Plásticos Reemplazados',
-    description: 'Unidades de un solo uso sustituidas en el canal HORECA.',
+    value: '100%',
+    label: 'LIBRE DE POLÍMEROS FÓSILES',
+    description: 'Sustitución real del plástico de un solo uso y telgopor en el canal gastronómico y delivery por vajilla rígida biocompostable.',
     icon: 'ShieldCheck'
   },
   {
     id: 'rice-reutilized',
-    value: '380 Ton',
-    label: 'Biomasa Reutilizada',
-    description: 'Residuos agrícolas de Corrientes integrados a la economía circular.',
+    value: '70% / 30%',
+    label: 'BIOMASA LOCAL INTEGRADA',
+    description: 'Fórmula optimizada de triple impacto basada en cáscara de arroz procesada de Corrientes combinada con biopolímeros naturales.',
     icon: 'Trees'
   },
   {
     id: 'clients-certified',
-    value: '450+',
-    label: 'Operaciones Certificadas',
-    description: 'Establecimientos B2B con auditoría de residuo cero.',
+    value: '90-120 Días',
+    label: 'DEGRADACIÓN BIOLÓGICA COMPLETA',
+    description: 'Sustentabilidad medible respaldada bajo normas científicas de aptitud alimentaria y compostaje industrial (ISO 17088 / INTI).',
     icon: 'Award'
   }
 ];
@@ -191,38 +191,38 @@ export const metrics: Metric[] = [
 export const processSteps: ProcessStep[] = [
   {
     step: 1,
-    title: 'Residuo Agrícola',
-    description: 'Recolección de cáscara de arroz sobrante en Corrientes. Evitamos la quema del residuo agrícola en origen.',
+    title: 'Materia Prima Local',
+    description: 'Recolección de la cáscara de arroz sobrante en los molinos de Corrientes. Así, evitamos de manera directa la quema de este residuo a cielo abierto en la región.',
     icon: 'Leaf'
   },
   {
     step: 2,
-    title: 'Transformación',
-    description: 'Molienda física ultrafina de la biomasa arrocera. Proceso mecánico libre de solventes químicos y ácidos.',
+    title: 'Molienda Limpia',
+    description: 'Proceso puramente mecánico de molienda fina de la biomasa arrocera, libre de solventes químicos y ácidos contaminantes.',
     icon: 'Cpu'
   },
   {
     step: 3,
-    title: 'Biocompuesto',
-    description: 'Fusión de biomasa con polímeros de almidón vegetal. Síntesis de gránulos rígidos de alta densidad.',
+    title: 'Fórmula Circular',
+    description: 'Fusión del residuo de arroz procesado con biopolímeros naturales a base de almidón vegetal. Creación de gránulos rígidos listos para el moldeo.',
     icon: 'Layers'
   },
   {
     step: 4,
-    title: 'Producción Limpia',
-    description: 'Moldeo industrial por termocompresión de bajo consumo. Acabado de precisión micrométrica sin mermas.',
+    title: 'Inyección Industrial',
+    description: 'Moldeo por inyección térmica industrial utilizando matrices de acero de alta precisión. Fabricación eficiente, rápida y de bajo consumo energético.',
     icon: 'Factory'
   },
   {
     step: 5,
-    title: 'Uso Profesional',
-    description: 'Integración directa en logística y servicio B2B. Resistencia hidrofóbica y térmica en operaciones exigentes.',
+    title: 'Servicio Gastronómico',
+    description: 'Distribución directa en locales de delivery, eventos y ferias. Productos descartables con alta resistencia térmica y barrera impermeable a la humedad.',
     icon: 'ShieldCheck'
   },
   {
     step: 6,
-    title: 'Compostaje Rápido',
-    description: 'Ciclo de degradación: 90–120 días → retorno al suelo.',
+    title: 'Retorno al Suelo',
+    description: 'Degradación biológica completa a través de plantas de compostaje en un plazo de 90 a 120 días. El material vuelve a la tierra de forma orgánica y libre de microplásticos.',
     icon: 'Recycle'
   }
 ];
@@ -236,17 +236,17 @@ export const faqItems: FAQItem[] = [
   {
     id: 'faq-moq',
     question: '¿Cuáles son los pedidos mínimos (MOQ)?',
-    answer: 'Los mínimos varían desde 1,000 unidades en bandejas hasta 5,000 en cubiertos. Ofrecemos contratos de suministro anual programado.'
+    answer: 'Nuestros pedidos mínimos están adaptados a la escala de cada comercio, ofreciendo packs desde 10 unidades (ideales para pruebas operativas de menú) hasta cajas cerradas de 500 unidades para el stock mensual. Para asegurar la provisión continua y tarifas corporativas preferenciales, coordinamos contratos de suministro anual programado.'
   },
   {
     id: 'faq-temp',
-    question: '¿Mantiene la rigidez con líquidos calientes?',
-    answer: 'Sí. La estructura de sílice natural del arroz es hidrofóbica. Soporta aceites y líquidos calientes a 100°C por más de 12 horas.'
+    question: '¿Se ablanda o deforma con comidas y líquidos calientes?',
+    answer: 'No, para nada. A diferencia del cartón o el papel, el biocompuesto de cáscara de arroz no absorbe humedad ni grasas. Soporta perfectamente líquidos hirviendo (hasta 100°C) y mantiene su rigidez intacta por más de 12 horas, asegurando que el delivery llegue impecable.'
   },
   {
     id: 'faq-custom',
     question: '¿El packaging es personalizable?',
-    answer: 'Sí. Realizamos grabado láser de precisión y flexografía digital con tintas al agua aptas para consumo alimentario.'
+    answer: 'Desarrollo a medida para la incorporación de la identidad visual de tu local mediante grabado láser de alta precisión en la superficie del biocompuesto o tampografía ecológica, destacando tu logo junto al sello de OrizPak.'
   },
   {
     id: 'faq-time',

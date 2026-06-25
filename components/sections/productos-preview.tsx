@@ -48,8 +48,8 @@ export const ProductosPreview: React.FC = () => {
                     height={400}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                   />
-                  <div className="absolute bottom-3 right-3">
-                    <Badge variant="sand">{product.impact}</Badge>
+                  <div className="absolute top-3 left-3">
+                    <Badge variant="charcoal">ECO-PACKAGING</Badge>
                   </div>
                 </div>
 
@@ -70,14 +70,7 @@ export const ProductosPreview: React.FC = () => {
               </div>
 
               {/* Action */}
-              <div className="pt-6 mt-6 border-t border-brand-charcoal/10 flex items-center justify-between">
-                <div className="flex flex-wrap gap-1">
-                  {product.certifications.slice(0, 2).map((cert) => (
-                    <span key={cert} className="text-[10px] font-heading font-bold text-brand-charcoal/60 bg-brand-sand px-2 py-0.5 rounded-full">
-                      {cert.split(' ')[0]}
-                    </span>
-                  ))}
-                </div>
+              <div className="pt-6 mt-6 border-t border-brand-charcoal/10 flex items-center justify-end">
                 <Link href={`/productos?id=${product.id}`} className="inline-flex items-center text-sm font-heading font-bold text-brand-charcoal hover:text-brand-olive transition-colors duration-200">
                   Ver Ficha
                   <ArrowRight className="ml-1 h-4 w-4 transform transition-transform duration-200 group-hover:translate-x-1" />

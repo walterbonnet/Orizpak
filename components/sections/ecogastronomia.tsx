@@ -25,8 +25,8 @@ export const EcoGastronomia: React.FC = () => {
       icon: <Lightbulb className="h-5 w-5" />
     },
     {
-      title: 'Diseño Personalizado Gratuito',
-      description: 'Desarrollo a medida de planos troquelados y grabado láser personalizado sin costo de matricería inicial.',
+      title: 'Diseño y Personalización de Marca',
+      description: 'Desarrollo a medida para la incorporación de la identidad visual de tu local mediante grabado láser de alta precisión en la superficie del biocompuesto o tampografía ecológica, destacando tu logo junto al sello de OrizPak.',
       icon: <ChefHat className="h-5 w-5" />
     }
   ];
@@ -49,7 +49,7 @@ export const EcoGastronomia: React.FC = () => {
             <div className="pt-2">
               <Link href="/contacto?ref=ecogastronomia">
                 <Button variant="primary" size="lg">
-                  Postular al Programa B2B
+                  Solicitar Kit de Prueba B2B
                 </Button>
               </Link>
             </div>
