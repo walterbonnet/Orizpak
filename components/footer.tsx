@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               </span>
             </Link>
             <p className="text-brand-warm-white/70 text-sm font-body leading-relaxed max-w-sm">
-              Desarrollamos soluciones de packaging premium sustentable para empresas que buscan reducir su impacto ambiental sin comprometer la calidad ni el rendimiento industrial.
+              Fabricamos descartables 100% biocompostables para comercios gastronómicos que buscan eliminar los plásticos de un solo uso sin comprometer la resistencia
             </p>
             <div className="flex space-x-4">
               <a
@@ -95,16 +95,12 @@ export const Footer: React.FC = () => {
             <h3 className="font-heading text-xs font-bold uppercase tracking-wider text-brand-warm-white mb-6">Certificaciones y Sellos</h3>
             <div className="space-y-4 text-xs font-body text-brand-warm-white/60">
               <div className="border border-brand-warm-white/10 rounded-2xl p-4 bg-brand-warm-white/5">
-                <span className="font-heading font-bold text-brand-warm-white block mb-1">Biocompostable Certificado</span>
-                Norma ISO 17088 / INTI
+                <span className="font-heading font-bold text-brand-warm-white block mb-1">Sello de Industria Regional / Economía Circular</span>
+                Valorización y transformación de la cáscara de arroz proveniente de los molinos locales del NEA. Una alternativa de triple impacto que reduce de manera real la quema de desechos agrícolas a cielo abierto.
               </div>
               <div className="border border-brand-warm-white/10 rounded-2xl p-4 bg-brand-warm-white/5">
-                <span className="font-heading font-bold text-brand-warm-white block mb-1">0% Polímeros Petroquímicos</span>
-                Libre de BPA
-              </div>
-              <div className="border border-brand-warm-white/10 rounded-2xl p-4 bg-brand-warm-white/5">
-                <span className="font-heading font-bold text-brand-warm-white block mb-1">Apto Contacto Alimentario</span>
-                Norma UNE-EN 1186 / INTI
+                <span className="font-heading font-bold text-brand-warm-white block mb-1">Biocompostable Certificado (Norma ISO 17088 / INTI)</span>
+                Ensayos científicos que aseguran una biodegradación biológica completa en un plazo de 90 a 120 días. El material vuelve a la tierra de forma orgánica sin liberar residuos de microplásticos.
               </div>
             </div>
           </div>

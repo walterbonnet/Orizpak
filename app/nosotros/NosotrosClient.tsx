@@ -37,7 +37,7 @@ export default function NosotrosClient() {
               <span className="text-brand-olive">tecnología circular</span>
             </h1>
             <p className="font-body text-lg text-brand-charcoal/80 leading-relaxed">
-              ORIZPAK nace para resolver la dependencia petroquímica en el packaging B2B. Integramos ingeniería de materiales y biomasa agrícola regional.
+              ORIZPAK nace para transformar la industria del descarte comercial en el norte argentino. Integramos ingeniería de materiales y biomasa agrícola regional para dar una alternativa real al uso de plásticos tradicionales.
             </p>
             <p className="font-body text-base text-brand-charcoal/70 leading-relaxed">
               No reemplazamos plástico por marketing. Desarrollamos envases técnicos de alto rendimiento que retornan a la tierra como abono vegetal.
