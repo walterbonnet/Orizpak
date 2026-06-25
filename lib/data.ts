@@ -2,8 +2,8 @@ import { Product, Metric, ProcessStep, FAQItem } from '../types';
 
 export const products: Product[] = [
   {
-    id: 'vaso-orizpack',
-    name: 'Vaso OrizPack de 350ml/500ml',
+    id: 'vaso-orizpak',
+    name: 'Vaso OrizPak de 350ml/500ml',
     description: 'Envase térmico rígido de cáscara de arroz. Aislante natural para bebidas calientes y frías sin aditivos químicos.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
@@ -25,8 +25,8 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'plato-orizpack',
-    name: 'Plato OrizPack Hondo y Playo',
+    id: 'plato-orizpak',
+    name: 'Plato OrizPak Hondo y Playo',
     description: 'Vajilla de alta densidad mecánica. Rigidez idéntica al plástico inyectado, apto para alimentos calientes y grasas.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
@@ -49,7 +49,7 @@ export const products: Product[] = [
   },
   {
     id: 'bandeja-compartimentada',
-    name: 'Bandeja Compartimentada OrizPack',
+    name: 'Bandeja Compartimentada OrizPak',
     description: 'Bandeja rígida para logística alimentaria. Mantiene la neutralidad organoléptica del almidón sin condensación.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
@@ -92,8 +92,8 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'cubiertos-orizpack',
-    name: 'Kit de Cubiertos OrizPack',
+    id: 'cubiertos-orizpak',
+    name: 'Kit de Cubiertos OrizPak',
     description: 'Utensilios rígidos de alto rendimiento. Utensilios mecánicos superiores que no se doblan ante cortes o alimentos densos.',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
@@ -114,8 +114,8 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'sorbetes-orizpack',
-    name: 'Sorbetes OrizPack',
+    id: 'sorbetes-orizpak',
+    name: 'Sorbetes OrizPak',
     description: 'Conducto rígido hidrofóbico de arroz. Mantiene su integridad estructural en líquidos por más de 12 horas.',
     category: 'ECO-PACKAGING',
     material: 'Cáscara de Arroz',
@@ -136,8 +136,8 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 'tapas-orizpack',
-    name: 'Tapas OrizPack',
+    id: 'tapas-orizpak',
+    name: 'Tapas OrizPak',
     description: 'Tapas ecológicas a presión compatibles con vasos OrizPack de 350ml y 500ml. Disponibles en variantes para bebidas calientes (con pico) y bebidas frías (con cruz para sorbete).',
     category: 'ECO-PACKAGING',
     material: 'Biocompuesto de Arroz',
